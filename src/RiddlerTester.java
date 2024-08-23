@@ -9,25 +9,25 @@ public class RiddlerTester {
     @Test
     public void testOne() {
         setTestData("1");
-        solver.decryptOne(encrypted);
+        System.out.println(solver.decryptOne(encrypted));
     }
 
     @Test
     public void testTwo() {
         setTestData("2");
-        solver.decryptOne(encrypted);
+        System.out.println(solver.decryptTwo(encrypted));
     }
 
     @Test
     public void testThree() {
         setTestData("3");
-        solver.decryptOne(encrypted);
+        System.out.println(solver.decryptThree(encrypted));
     }
 
     @Test
     public void testFour() {
         setTestData("4");
-        solver.decryptOne(encrypted);
+        System.out.println(solver.decryptFour(encrypted));
     }
 
     private void setTestData(String text) {
