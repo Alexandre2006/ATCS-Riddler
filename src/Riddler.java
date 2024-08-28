@@ -91,11 +91,11 @@ public class Riddler {
             // Get the last byte of the emoji
             byte lastByte = emoji.getBytes(StandardCharsets.UTF_8)[2];
             byte secondToLastByte = emoji.getBytes(StandardCharsets.UTF_8)[1];
+            System.out.println(Arrays.toString(emoji.getBytes(StandardCharsets.UTF_8)));
 
             // Check for special character (last byte is -101)
             if (secondToLastByte == -101) {
                 decryptedBytes[i] = (byte) (129 + lastByte);
-                System.out.println(decryptedBytes[i]);
             } else {
                 decryptedBytes[i] = (byte) (193 + lastByte);
             }
